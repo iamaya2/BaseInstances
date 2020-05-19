@@ -1,0 +1,30 @@
+Instance: 
+S =[10 9 8 1 1 2 2 1 1 1 1 1 1]
+
+Solutions: 
+	Heuristics:
+		Max: S1 = [1 1 2 2 1 1 1 1 1 1], S2=[10 9 8]; 	Q = 15
+		Min: S1 = [10    9],  S2=[1 1 1 1 1 1 1 1 2 2 8]; 	Q = 1
+		
+	Hyper-heuristics:
+		Rule-based: [ F1  A ]
+			rule1 = [0.2 Max]
+			rule2 = [0.3 Min]
+			solution: ???
+		
+		Sequence-based:
+			sequence = [Min Max] + restart scheme
+			solution: S1 = [8 2 2 1 1 1 1 1 1],  S2=[1 10 1 9]; Q = 3
+			
+			sequence = [Min Max] + reflect scheme
+			solution: S1 = [8 1 2 2 1 1 1 1 1 1],  S2=[1 10 9]; Q = 1
+			
+			sequence = [Max Min] + restart scheme
+			solution: S1 = [8 1 2 2 1 1 1 1 1 1], S2 = [10 1 9]; Q = 1
+			
+			sequence = [Max Min] + reflect scheme
+			solution: S1 = [8 2 2 1 1 1 1 1 1], S2 = [10 1 1 9]; Q = 3
+
+Q: Difference in total value = abs(sum(s1)-sum(S2))
+F1: ratio of S2 = sum(S2) / sum(S) = sum(S2) / (sum(S1)+sum(S2))
+A: Action to be taken (heuristics)
