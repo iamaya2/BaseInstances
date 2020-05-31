@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+	<presentation format="XJSSP 1.0" type="JSSP"/>
+	<jobs nbJobs="6">
+		<job id="J0" nbActivities="5" precedence="true" after="0"/>
+		<job id="J1" nbActivities="5" precedence="true" after="0"/>
+		<job id="J2" nbActivities="5" precedence="true" after="0"/>
+		<job id="J3" nbActivities="5" precedence="true" after="0"/>
+		<job id="J4" nbActivities="5" precedence="true" after="0"/>
+		<job id="J5" nbActivities="5" precedence="true" after="0"/>
+	</jobs>
+	<machines nbMachines="5">
+		<machine id="M0"/>
+		<machine id="M1"/>
+		<machine id="M2"/>
+		<machine id="M3"/>
+		<machine id="M4"/>
+	</machines>
+	<activities nbActivities="5">
+		<activity job="J0" machine="M3" time="6"/>
+		<activity job="J0" machine="M4" time="57"/>
+		<activity job="J0" machine="M1" time="50"/>
+		<activity job="J0" machine="M0" time="46"/>
+		<activity job="J0" machine="M2" time="63"/>
+		<activity job="J1" machine="M1" time="56"/>
+		<activity job="J1" machine="M0" time="58"/>
+		<activity job="J1" machine="M3" time="72"/>
+		<activity job="J1" machine="M4" time="9"/>
+		<activity job="J1" machine="M2" time="42"/>
+		<activity job="J2" machine="M3" time="22"/>
+		<activity job="J2" machine="M0" time="46"/>
+		<activity job="J2" machine="M4" time="52"/>
+		<activity job="J2" machine="M2" time="51"/>
+		<activity job="J2" machine="M1" time="29"/>
+		<activity job="J3" machine="M2" time="10"/>
+		<activity job="J3" machine="M3" time="78"/>
+		<activity job="J3" machine="M4" time="53"/>
+		<activity job="J3" machine="M1" time="14"/>
+		<activity job="J3" machine="M0" time="50"/>
+		<activity job="J4" machine="M2" time="33"/>
+		<activity job="J4" machine="M3" time="42"/>
+		<activity job="J4" machine="M0" time="19"/>
+		<activity job="J4" machine="M4" time="89"/>
+		<activity job="J4" machine="M1" time="92"/>
+		<activity job="J5" machine="M4" time="71"/>
+		<activity job="J5" machine="M2" time="23"/>
+		<activity job="J5" machine="M0" time="18"/>
+		<activity job="J5" machine="M1" time="52"/>
+		<activity job="J5" machine="M3" time="8"/>
+	</activities>
+</instance>

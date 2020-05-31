@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+	<presentation format="XJSSP 1.0" type="JSSP"/>
+	<jobs nbJobs="3">
+		<job id="J0" nbActivities="4" precedence="true" after="0"/>
+		<job id="J1" nbActivities="4" precedence="true" after="0"/>
+		<job id="J2" nbActivities="4" precedence="true" after="0"/>
+	</jobs>
+	<machines nbMachines="4">
+		<machine id="M0"/>
+		<machine id="M1"/>
+		<machine id="M2"/>
+		<machine id="M3"/>
+	</machines>
+	<activities nbActivities="4">
+		<activity job="J0" machine="M1" time="0.0"/>
+		<activity job="J0" machine="M2" time="10.0"/>
+		<activity job="J0" machine="M2" time="10.0"/>
+		<activity job="J0" machine="M0" time="10.0"/>
+		<activity job="J1" machine="M1" time="1.0E-4"/>
+		<activity job="J1" machine="M2" time="10.0"/>
+		<activity job="J1" machine="M3" time="1.1595"/>
+		<activity job="J1" machine="M0" time="5.4081"/>
+		<activity job="J2" machine="M1" time="10.0"/>
+		<activity job="J2" machine="M1" time="10.0"/>
+		<activity job="J2" machine="M1" time="9.9999"/>
+		<activity job="J2" machine="M2" time="10.0"/>
+	</activities>
+</instance>
