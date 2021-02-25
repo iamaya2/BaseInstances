@@ -7,7 +7,7 @@ addpath(genpath("..\..\")); % Adds all Github packages
 
 % Read files from subfolder using 'dir'
 baseLocation = 'files\';
-instanceFolder = 'Instances\E01\';
+instanceFolder = 'Instances\Taillard1515New\';
 txtFileName = [baseLocation 'txt\' instanceFolder '*.txt'];
 allFiles    = dir(txtFileName);
 nbFiles     = length(allFiles);
