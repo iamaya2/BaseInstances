@@ -4,8 +4,7 @@ clc
 clear
 close all
 
-% addpath(genpath('..\..\')); % Adds all Github packages
-addpath(genpath('..\..\MatHH')); % Adds MatHH package
+addpath(genpath('..\..\')); % Adds all Github packages
 
 %% Read files from subfolder using 'dir'
 baseLocation = 'files\';
@@ -17,14 +16,14 @@ baseLocation = 'files\';
 % isFromORLib = false; % Not from the OR-Library
 
 % For Taillard instances (source: http://mistic.heig-vd.ch/taillard/problemes.dir/ordonnancement.dir/ordonnancement.html) 
-% instanceFolder = 'Instances\TaillardWeb1515\';
+instanceFolder = 'Instances\TaillardWeb1515\';
 % instanceFolder = 'Instances\TaillardWeb2015\';
 % instanceFolder = 'Instances\TaillardWeb2020\';
 % instanceFolder = 'Instances\TaillardWeb3015\';
 % instanceFolder = 'Instances\TaillardWeb3020\';
 % instanceFolder = 'Instances\TaillardWeb5015\';
 % instanceFolder = 'Instances\TaillardWeb5020\';
-instanceFolder = 'Instances\TaillardWeb10020\';
+% instanceFolder = 'Instances\TaillardWeb10020\';
 % Flag definition:
 isFromTaillardWeb = true; % From Taillard's website
 isFromORLib = false; % Not from the OR-Library
@@ -90,11 +89,10 @@ else
                     thisInstanceRawData(idJ,:,2) = lineData;
                 end
                 
-                allInstances{instanceCounter} = JSSPInstance(thisInstanceRawData); % Store instance
+                thisInstance = JSSPInstance(thisInstanceRawData);
+                allInstances{instanceCounter} = ;
             end            
         end
-        
-        fclose(fileID);
     end
 end
 

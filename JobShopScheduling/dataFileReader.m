@@ -32,7 +32,7 @@ nbFiles     = length(allFiles);
 allInstances(nbFiles) = JSSPInstance();
 for idF = nbFiles : -1 : 1
     fprintf('Files remaining: %d\n', idF)
-    % load text file as table
+    % load text file as raw data
     thisFileName = [baseLocation 'data\' instanceFolder allFiles(idF).name];
     fileID = fopen(thisFileName);
     
