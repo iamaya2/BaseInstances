@@ -27,6 +27,6 @@ The following datasets are currently available:
 ### Balanced Partition Problems
 
 ## References
-Taillard instances: http://mistic.heig-vd.ch/taillard/problemes.dir/ordonnancement.dir/ordonnancement.html
-OR-Library instances: http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/jobshop1.txt
-Known Optima and Large TA instances: https://arxiv.org/src/2102.08778v2/anc
+- Taillard instances: http://mistic.heig-vd.ch/taillard/problemes.dir/ordonnancement.dir/ordonnancement.html
+- OR-Library instances: http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/jobshop1.txt
+- Known Optima and Large TA instances: https://arxiv.org/src/2102.08778v2/anc
