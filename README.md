@@ -17,6 +17,16 @@ This repository is mainly intended to be used with the **MatHH** framework but w
 The following datasets are currently available: 
 
 ### Job Shop Scheduling Problems
-| Dataset | Description		| Available formats | Folder names |
-| ---- | ---- |---- | ---- |
-|Taillard | Traditional dataset  | mat txt | TaillardWeb1515,  |
+| **Dataset** | **Description**		| **Available formats** | **Folder names** | **Total instances**|
+| ---- | ---- |---- | ---- | ---- |
+|Taillard | Traditional dataset published by Taillard using a random number generator | mat txt | TaillardWeb1515, TaillardWeb2015, TaillardWeb2020, TaillardWeb3015, TaillardWeb3020, TaillardWeb5015, TaillardWeb5020, TaillardWeb10020 | 80 |
+|OR-Library | Traditional dataset that compiles instances from Adams, Balas, and Zawack, from Fisher and Thompson, from Lawrence, from Applegate and Cook, from Storer, Wu, and Vaccari, and from Yamada and Nakano | mat  txt| ORLibrary | 82 |
+|Known Optima | Dataset proposed by Giacomo Da Col, Erich Teppan about instances with known optimal solutions | mat data | KnownOptima_Benchmark | 24 |
+|Large TA | Dataset proposed by Giacomo Da Col, Erich Teppan about large instances that are supposed to resemble real-life scenarios | mat data | LargeTA_Benchmark | 90 |
+
+### Balanced Partition Problems
+
+## References
+Taillard instances: http://mistic.heig-vd.ch/taillard/problemes.dir/ordonnancement.dir/ordonnancement.html
+OR-Library instances: http://people.brunel.ac.uk/~mastjjb/jeb/orlib/files/jobshop1.txt
+Known Optima and Large TA instances: https://arxiv.org/src/2102.08778v2/anc
